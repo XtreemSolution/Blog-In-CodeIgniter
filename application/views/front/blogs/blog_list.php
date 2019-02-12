@@ -24,8 +24,8 @@
         <td><?php echo $record->content ?></td>
         <td><img src="<?php echo  base_url('assets/uploads/blogs/') ?><?php echo $record->image_name ?>" widht="80" height="80"></td>
         <td>
-            <!-- <a data-toggle="modal" data-id="<?php echo $record->id; ?>" data-url="<?php echo base_url('blogs/delete'); ?>" class="btn btn-danger tooltips" onClick="deleteRecord(this);" data-original-title="Delete this record" data-placement="top" data-container="body">Delete</a>
-            <a href="<?php echo base_url('blogs/update/'.$record->id) ?>" class="btn btn-info  tooltips" data-original-title="Update this record" data-placement="top" data-container="body">Edit</a>
+            <a data-toggle="modal" data-id="<?php echo $record->id; ?>" data-url="<?php echo base_url('blogs/delete'); ?>" class="btn btn-danger tooltips" onClick="deleteRecord(this);" data-original-title="Delete this record" data-placement="top" data-container="body">Delete</a>
+           <!--  <a href="<?php echo base_url('blogs/update/'.$record->id) ?>" class="btn btn-info  tooltips" data-original-title="Update this record" data-placement="top" data-container="body">Edit</a>
              <a href="<?php echo base_url('blogs/view/'.$record->id) ?>" class="btn btn-success  tooltips" data-original-title="Update this record" data-placement="top" data-container="body">View</a> -->
 
         </td>
