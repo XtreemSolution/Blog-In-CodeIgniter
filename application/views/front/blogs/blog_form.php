@@ -86,8 +86,8 @@
             <div class="form-actions noborder">
                <div class="row">
                   <div class="col-md-offset-2 col-md-10">
-                     <button type="submit" class="btn green">Submit</button>
-                     <a href="<?php echo base_url(''); ?>" class="btn default">Cancel</a>
+                     <button type="submit" class="btn btn-default">Submit</button>
+                     <a href="<?php echo base_url(''); ?>" class=" btn btn-default pull-right">Cancel</a>
                   </div>
                </div>
             </div>

@@ -21,5 +21,25 @@ class Blogs_model extends CI_Model {
     {
         $this->db->insert($this->table, $data);
         return $this->db->insert_id();
+    }
+
+    function deleteRecordById($id) {
+		$this->db->where('id', $id);
+		$this->db->delete('tbl_blogs');
+	}
+	function getSingleRecordById($id)
+    {
+        $this->db->select('*');
+        $this->db->order_by('id', 'DESC');
+        $this->db->where('id', $id);
+        $query = $this->db->get($this->table, $id);
+		$result = $query->row();
+        return $result;
+    }
+
+	function updateRecordById($id, $input)
+    {
+        $this->db->where('id', $id);
+        $this->db->update($this->table, $input);
     } 
 }   
